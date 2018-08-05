@@ -226,7 +226,6 @@ body {
 
 @media (min-width: 768px) {
 	.nav {
-		margin: 0;
 		display: block;
 	}
 
