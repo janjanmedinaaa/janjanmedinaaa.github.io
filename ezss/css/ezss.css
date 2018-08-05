@@ -3,11 +3,3 @@
 @import url("ezss-basics.css");
 @import url("ezss-assets.css");
 @import url("ezss-nav.css");
-
-body {
-    background-color: #F0DFDF;;
-}
-
-.alert-container {
-    width: 450px;
-}

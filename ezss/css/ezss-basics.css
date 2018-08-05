@@ -59,6 +59,10 @@ h6 {
     color: #3BAFDA;
 }
 
+.text-clear {
+    color: #fff;
+}
+
 .bg-success {
     background-color: #8CC152;
 }
@@ -73,4 +77,8 @@ h6 {
 
 .bg-info {
     background-color: #3BAFDA;
+}
+
+.bg-clear {
+    background-color: #fff;
 }

@@ -358,6 +358,6 @@ textarea {
 /****** Input Focus ******/
 
 .ezss-input:focus {
-    border-width: 2px;
+    border-width: 1px;
     transition: 0.5s all;
 }
