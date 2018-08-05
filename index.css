@@ -48,7 +48,6 @@ body {
 	display: flex;
 	width: 100vw;
 	height: 100vh;
-	min-height: 555px;
 	padding: 0;
 	margin: 0;
 	justify-content: center;
