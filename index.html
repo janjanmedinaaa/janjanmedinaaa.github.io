@@ -3,9 +3,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="./ezss/css/ezss.css" />
+    <script type="text/javascript" src="./ezss/js/ezss.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css" />
     <title>My Portfolio</title>
 </head>
 <body>
-    
+    <nav class="ezss-nav nav-clear nav">
+        <div class="nav-center">
+            <a href="#home" class="nav-tab">HOME</a>
+            <a href="#about-me" class="nav-tab">ABOUT ME</a>
+            <a href="#" class="nav-tab">SKILLS</a>
+            <a href="#projects" class="nav-tab">MY PROJECTS</a>
+            <a href="#contact" class="nav-tab">CONTACT ME</a>
+        </div>
+    </nav>
+    <div id="mainContainer">
+        <div class="home" id="home">
+            <img src="assets/home-image.jpg" />
+            <p class="home-name">JANJAN MEDINA</p>
+            <p class="home-description">PROGRAMMER. INNOVATOR. DEVELOPER.</p>
+                
+            <button class="ezss-btn btn-clear">CHECK MY PROJECTS</button>
+        </div>
+        <div class="about-me content" id="about-me">
+            <h2>ABOUT ME</h2>
+            <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+                mollit anim id est laborum."
+            </p>
+            <div>
+                <button class="ezss-btn btn-info fb" onclick="location.href='https://www.facebook.com/janjanmedinaaa'">
+                    <i class="fa fa-facebook-square"></i> 
+                    &nbsp; ADD ME ON FACEBOOK
+                </button>	
+                <button class="ezss-btn btn-info" onclick="location.href='https://twitter.com/janjanmedinaaa'">
+                    <i class="fa fa-twitter"></i> 
+                    &nbsp; FOLLOW ME ON TWITTER
+                </button>
+            </div>
+        </div>
+        <div class="my-projects content" id="projects">
+            <h2>MY PROJECTS</h2>
+            <div class="project-con">
+                <div class="project-image">
+
+                </div>
+                <div class="project-description">
+
+                </div>
+            </div>
+            <div class="project-con">
+                <div class="project-image">
+
+                </div>
+                <div class="project-description">
+                    
+                </div>
+            </div>
+            <div>
+                <button class="ezss-btn" onclick="location.href='https://github.com/janjanmedinaaa'">
+                    <i class="fa fa-github"></i> 
+                    &nbsp; FOLLOW ME ON GITHUB
+                </button>	
+            </div>
+        </div>
+        <div class="contact-me content" id="contact">
+            <h2>CONTACT ME</h2>
+
+            <div class="contact-con">
+                <div class="contact-item-con">
+                    <input type="text" class="ezss-input" placeholder="First Name"/> 
+                    <input type="text" class="ezss-input" placeholder="Last Name"/> 
+                </div>
+                <div class="contact-item-con">
+                    <input type="text" class="ezss-input" placeholder="Subject"/> 
+                </div>
+                <div class="contact-item-con">
+                    <textarea placeholder="Message..."></textarea>
+                </div>
+                <button class="ezss-btn btn-danger">SEND MESSAGE</button>
+            </div>
+        </div>  
+        <div class="footer nav-sm">
+            <p>	&copy; Janjan Medina 2018 </p>
+            <div class="nav-right">
+                <a href="#home" class="nav-tab">HOME</a>
+                <a href="#about-me" class="nav-tab">ABOUT ME</a>
+                <a href="#" class="nav-tab">SKILLS</a>
+                <a href="#projects" class="nav-tab">MY PROJECTS</a>
+                <a href="#contact" class="nav-tab">CONTACT ME</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

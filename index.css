@@ -1,0 +1,229 @@
+/*
+	!!!DON'T FORGET TO UPDATE THESE INFORMATION!!!
+	Filename: index.html
+	Author: Janjan Medina
+	Author URI: https://github.com/janjanmedinaaa
+	Project: Portfolio
+*/
+
+/***** General Styles *****/
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
+	font-family: Roboto;
+	color: #fff;
+}
+
+.nav {
+	margin: 0;
+}
+
+.nav a {
+	color: #fff;
+}
+
+.nav a:hover {
+	color: #DEDCDC;
+}
+
+/***** mainContainer *****/
+
+#mainContainer {
+	display: flex;
+	flex-direction: column;
+	background-color: #DB3243;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	z-index: -1;
+}
+
+.home {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	min-height: 681px;
+	padding: 0;
+	margin: 0;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.home img {
+	border-radius: 350px;
+	width: 350px;
+	height: 350px;
+	margin: 20px;
+}
+
+.home p, .home button {
+	margin: 10px;
+	font-family: Roboto Light;
+}
+
+.home-name {
+	font-size: 50px;
+	font-weight: 400;
+}
+
+.home-description {
+	font-size: 17px;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+}
+
+.about-me {
+	background-color: #FEFDFD;
+	padding: 30 50px;
+}
+
+.about-me h2 {
+	color: #DB3243;
+}
+
+.about-me p {
+	padding: 15px 20%;
+	letter-spacing: 1px;
+	color: #000;
+}
+
+.fb {
+    border-color:#3B5998;
+    color: #3B5998;
+}
+
+.fb:before {
+    background: #3B5998;
+}
+
+.my-projects {
+	padding: 30px 0;
+	/* background-color: #CDB5CD; */
+}
+
+.project-con {
+	display: flex;
+	/* background-color: darkorange; */
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+.project-con div {
+	flex: 1 1 400px;
+	margin: 0;
+}
+
+.project-image {
+	/* background-color: darkcyan; */
+}
+
+.project-content {
+	background-color: #DB3243;
+}
+
+.contact-me {
+	padding: 30px 0;
+	background-color: #FEFDFD;
+	color: #DB3243;
+}
+
+.contact-con {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-end;
+	margin: 5px;
+	padding: 15px;
+	width: 50%;
+}
+
+.contact-item-con {
+	display: flex;
+	flex: 1;
+	width: 100%;
+	align-self: center; 
+	padding: 0;
+}
+
+.contact-item-con input, .contact-item-con textarea {
+	flex: 1;
+	margin: 5px;
+	margin-top: 0;
+	border-color: #DB3243;
+}
+
+.contact-item-con textarea {
+	height: 250px;
+}
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 12px 0;
+	background-color: #DB3243;
+}
+
+.footer a {
+	border-width: 0;
+	color: #fff;
+	background-color: #DB3243;
+}
+
+.footer a:hover {
+	color: #DEDCDC;
+}
+
+.footer .nav-right {
+	flex-direction: column;
+}
+
+.footer .nav-right a {
+	padding: 10px;
+}
+
+/* Small devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+}
+
+/* Small devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+	.footer {
+		display: flex;
+		justify-content: space-around;
+		flex-direction: row;
+		align-items: center;
+		padding: 12px 50px;
+		background-color: #DB3243;
+	}
+	
+	.footer .nav-right {
+		flex-direction: row;
+	}
+}
+
+/* Small devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+
+}
+
+
