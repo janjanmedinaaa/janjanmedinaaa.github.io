@@ -74,7 +74,7 @@ body {
 }
 
 .sidenav a {
-    padding: 30px;
+    padding: 10px;
     text-decoration: none;
     font-size: 25px;
     color: #DB3243;
@@ -98,7 +98,6 @@ body {
 	display: flex;
 	width: 100vw;
 	height: 100vh;
-	min-height: 682px;
 	padding: 0;
 	margin: 0;
 	justify-content: center;
@@ -325,4 +324,15 @@ body {
 
 }
 
+@media (min-height: 550px) {
+	.sidenav a {
+		padding: 30px;
+	}
+}
+
+@media (max-height: 650px) {
+	.home {
+		min-height: 682px;
+	}
+}
 
