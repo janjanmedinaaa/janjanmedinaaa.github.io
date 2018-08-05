@@ -336,3 +336,8 @@ body {
 	}
 }
 
+@media (max-width: 420px) {
+	.contact-me, .about-me {
+		min-height: 100vh;
+	}
+}
