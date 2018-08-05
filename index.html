@@ -10,7 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="index.js"></script>
     <link rel="stylesheet" href="index.css" />
-    <title>My Portfolio</title>
+    <title>Janjan Medina | Portfolio</title>
 </head>
 <body>
     <nav class="ezss-nav nav-clear nav">
@@ -22,6 +22,17 @@
             <a href="#contact" class="nav-tab">CONTACT ME</a>
         </div>
     </nav>
+    <nav class="ezss-nav nav-clear nav-right sidebar">
+        <a href="#home" onclick="openNav()" class="nav-tab">&#9776;</a>
+    </nav>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#home" class="nav-tab">HOME</a>
+        <a href="#about-me" class="nav-tab">ABOUT ME</a>
+        <a href="#" class="nav-tab">SKILLS</a>
+        <a href="#projects" class="nav-tab">MY PROJECTS</a>
+        <a href="#contact" class="nav-tab">CONTACT ME</a>
+    </div>
     <div id="mainContainer">
         <div class="home" id="home">
             <img src="assets/home-image.jpg" />
