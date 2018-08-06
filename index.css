@@ -167,6 +167,10 @@ body {
 .my-projects {
 	padding: 30px 0;
 	/* background-color: #CDB5CD; */
+	background-image:url(./assets/home-bg.png);
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:center; 
 }
 
 .project-con {
@@ -235,12 +239,15 @@ body {
 	padding: 12px 0;
 	background-color: #DB3243;
 	margin: 0;
+	background-image:url(./assets/home-bg.png);
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:center; 
 }
 
 .footer a {
 	border-width: 0;
 	color: #fff;
-	background-color: #DB3243;
 }
 
 .footer a:hover {
