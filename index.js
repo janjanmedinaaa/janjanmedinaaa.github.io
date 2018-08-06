@@ -1,28 +1,77 @@
-window.onload = function() {
-    $(document).ready(function(){
-        // Add smooth scrolling to all links
-        $("a").on('click', function(event) {
-      
-          // Make sure this.hash has a value before overriding default behavior
-          if (this.hash !== "") {
-            // Prevent default anchor click behavior
-            event.preventDefault();
-      
-            // Store hash
-            var hash = this.hash;
-      
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-            $('html, body').animate({
-              scrollTop: $(hash).offset().top
-            }, 800, function(){
-         
-              // Add hash (#) to URL when done scrolling (default click behavior)
-              window.location.hash = hash;
-            });
-          } // End if
-        });
+function sendEmail() {
+  let validation = 0;
+
+  let email = (document.getElementById('email').value != "") ? 
+                document.getElementById('email').value : 
+                validation++;
+  let subject = (document.getElementById('subject').value != "") ? 
+                document.getElementById('subject').value : 
+                validation++;
+                
+  let fname = (document.getElementById('fname').value != "") ? 
+                document.getElementById('fname').value : 
+                validation++;
+  
+  let lname = (document.getElementById('lname').value != "") ? 
+                document.getElementById('lname').value : 
+                validation++;
+                
+  let message = (document.getElementById('message').value != "") ? 
+                document.getElementById('message').value : 
+                validation++;
+
+  var template_params = {
+    "email": email,
+    "reply_to": email,
+    "subject": subject,
+    "first_name": fname,
+    "last_name": lname,
+    "message": message
+  }
+
+  var data = {
+      service_id: 'gmail',
+      template_id: 'default_template_v1',
+      user_id: 'user_Zy7dboUT6wWHWVHpMoHaI',
+      template_params: template_params
+  };
+
+  let headers = {
+      "Content-type": "application/json"
+  };
+
+  let options = {
+      method: 'POST',
+      headers: headers,
+      body: JSON.stringify(data)
+  };
+
+  if (validation == 0){
+    fetch('https://api.emailjs.com/api/v1.0/email/send', options)
+    .then((httpResponse) => {
+        if (httpResponse.ok) {
+            successMessage();
+        } else {
+            return httpResponse.text()
+                .then(text => Promise.reject(text));
+        }
+    })
+    .catch((error) => {
+        console.log(error);
+        failMessage();
     });
+  }
+  else {
+    failMessage();
+  }
+}
+
+function successMessage(){
+    document.getElementById('message-success').style.display = "inline-flex";
+}
+
+function failMessage(){
+    document.getElementById('message-fail').style.display = "inline-flex";
 }
 
 function openNav() {

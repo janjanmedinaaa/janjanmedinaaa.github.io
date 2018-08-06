@@ -31,6 +31,10 @@ body {
 	z-index: -1;
 }
 
+#message-success, #message-fail {
+	display: none;
+}
+
 .message-container {
 	display: flex;
 	align-items: center;
@@ -40,7 +44,6 @@ body {
 	width: 430px;
 	bottom: 0;
 	right: 0;
-	display: none;
 }
 
 .message-icon {
