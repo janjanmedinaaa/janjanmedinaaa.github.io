@@ -241,38 +241,38 @@ body {
 /* Skills */
 
 .html5 {
-    background: -webkit-linear-gradient(left, #ED5565 80%, #FEFDFD 20%);
-    background: -o-linear-gradient(left, #ED5565 80%, #FEFDFD 20%);
-    background: -moz-linear-gradient(left, #ED5565 80%, #FEFDFD 20%);
-	background: linear-gradient(left, #ED5565 80%, #FEFDFD 20%);
+    background: -webkit-linear-gradient(left, #ED5565 95%, #FEFDFD 5%);
+    background: -o-linear-gradient(left, #ED5565 95%, #FEFDFD 5%);
+    background: -moz-linear-gradient(left, #ED5565 95%, #FEFDFD 5%);
+	background: linear-gradient(left, #ED5565 95%, #FEFDFD 5%);
 }
 
 .css3 {
-    background: -webkit-linear-gradient(left, #ED5565 60%, #FEFDFD 40%);
-    background: -o-linear-gradient(left, #ED5565 60%, #FEFDFD 40%);
-    background: -moz-linear-gradient(left, #ED5565 60%, #FEFDFD 40%);
-	background: linear-gradient(left, #ED5565 60%, #FEFDFD 40%);
+    background: -webkit-linear-gradient(left, #ED5565 75%, #FEFDFD 25%);
+    background: -o-linear-gradient(left, #ED5565 75%, #FEFDFD 25%);
+    background: -moz-linear-gradient(left, #ED5565 75%, #FEFDFD 25%);
+	background: linear-gradient(left, #ED5565 75%, #FEFDFD 25%);
 }
 
 .javascript {
-    background: -webkit-linear-gradient(left, #ED5565 50%, #FEFDFD 50%);
-    background: -o-linear-gradient(left, #ED5565 50%, #FEFDFD 50%);
-    background: -moz-linear-gradient(left, #ED5565 50%, #FEFDFD 50%);
-	background: linear-gradient(left, #ED5565 50%, #FEFDFD 50%);
-}
-
-.android-java {
-    background: -webkit-linear-gradient(left, #ED5565 80%, #FEFDFD 20%);
-    background: -o-linear-gradient(left, #ED5565 80%, #FEFDFD 20%);
-    background: -moz-linear-gradient(left, #ED5565 80%, #FEFDFD 20%);
-	background: linear-gradient(left, #ED5565 80%, #FEFDFD 20%);
-}
-
-.react-native {
     background: -webkit-linear-gradient(left, #ED5565 60%, #FEFDFD 40%);
     background: -o-linear-gradient(left, #ED5565 60%, #FEFDFD 40%);
     background: -moz-linear-gradient(left, #ED5565 60%, #FEFDFD 40%);
 	background: linear-gradient(left, #ED5565 60%, #FEFDFD 40%);
+}
+
+.android-java {
+    background: -webkit-linear-gradient(left, #ED5565 60%, #FEFDFD 40%);
+    background: -o-linear-gradient(left, #ED5565 60%, #FEFDFD 40%);
+    background: -moz-linear-gradient(left, #ED5565 60%, #FEFDFD 40%);
+	background: linear-gradient(left, #ED5565 60%, #FEFDFD 40%);
+}
+
+.react-native {
+    background: -webkit-linear-gradient(left, #ED5565 75%, #FEFDFD 25%);
+    background: -o-linear-gradient(left, #ED5565 75%, #FEFDFD 25%);
+    background: -moz-linear-gradient(left, #ED5565 75%, #FEFDFD 25%);
+	background: linear-gradient(left, #ED5565 75%, #FEFDFD 25%);
 }
 
 .fb {
