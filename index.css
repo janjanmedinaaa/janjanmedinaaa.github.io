@@ -339,12 +339,14 @@ body {
 	margin: 20px 0;
 }
 
-.project-description > div {
+.project-description > button {
 	display: flex;
-	justify-content: center;
 	align-items: center;
-	align-self: flex-start;
 	display: none;
+}
+
+.project-description > button:before {
+	background: transparent;
 }
 
 /* MyGWA Assets */
@@ -524,7 +526,7 @@ body {
 		margin: 20px 80px;
 	}
 
-	.project-description > div {
+	.project-description > button {
 		display: inline-flex;
 		margin: 0;
 		align-self: center;
@@ -609,7 +611,7 @@ body {
 		margin-right: 100px;
 	}
 
-	.project-description > div {
+	.project-description > button {
 		display: inline-flex;
 		align-self: flex-start;
 		margin: 0;
