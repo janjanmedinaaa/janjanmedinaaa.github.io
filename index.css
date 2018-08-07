@@ -286,7 +286,6 @@ body {
 
 .my-projects {
 	padding: 30px 0;
-	/* background-color: #CDB5CD; */
 	background-image:url(./assets/home-bg.png);
 	background-repeat:no-repeat;
 	background-attachment:fixed;
@@ -295,25 +294,97 @@ body {
 
 .project-con {
 	display: flex;
-	/* background-color: darkorange; */
 	padding: 0;
-	margin: 0;
+	margin: 20px 0;
 	width: 100%;
-	flex-wrap: wrap;
+	flex-direction: column;
 }
 
-.project-con div {
-	flex: 1 1 400px;
+.project-con > div {
+	flex: 1;
 	margin: 0;
 }
 
 .project-image {
-	/* background-color: darkcyan; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-.project-content {
-	background-color: #DB3243;
+.project-description {
+	display: flex;
+	color: #000;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 10px 50px;
 }
+
+.project-description p {
+	margin: 10px 40px;
+	padding: 0;
+	text-align: center;
+}
+
+.project-description p:nth-child(1) {
+	width: 100%;
+	font-size: 30px;
+	margin: 0;
+}
+
+.project-description p:nth-child(2) {
+	padding: 0;
+	margin: 20px 0;
+}
+
+.project-description > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-self: flex-start;
+	display: none;
+}
+
+/* MyGWA Assets */
+
+.mygwa-icon {
+	width: 100px;
+	height: 100px;
+}
+
+.mygwa-my {
+	font-family: Roboto Light;
+	color: #000;
+	font-size: 50px;
+}
+
+.mygwa-gwa {
+	font-family: Roboto Bold;
+	margin-left: -5px;
+	color: rgb(254, 198, 1);
+	font-size: 50px;
+}
+
+/* End of MyGWA Assets */
+
+/* Gradulate Assets */
+
+.gradulate-icon {
+	width: 70px;
+	height: 70px;
+	border-radius: 10px;
+}
+
+.gradulate-text {
+	font-size: 35px;
+	margin-top: 10px;
+	font-family: Roboto Thin;
+	color: rgb(126, 236, 197);
+}
+
+/* End of Gradulate Assets */
 
 .contact-me {
 	padding: 30px 0;
@@ -449,6 +520,44 @@ body {
 		font-size: 17px;
 	}
 	
+	.project-description p:nth-child(2) {
+		margin: 20px 80px;
+	}
+
+	.project-description > div {
+		display: inline-flex;
+		margin: 0;
+		align-self: center;
+	}
+
+	/* MyGWA Assets */
+	
+	.mygwa-icon {
+		width: 130px;
+		height: 130px;
+	}
+	
+	.mygwa-my, .mygwa-gwa {
+		font-size: 70px;
+	}
+	
+	/* End of MyGWA Assets */
+	
+	/* Gradulate Assets */
+	
+	.gradulate-icon {
+		width: 80px;
+		height: 80px;
+		border-radius: 12px;
+		margin-right: 12px;
+	}
+	
+	.gradulate-text {
+		font-size: 50px;
+	}
+	
+	/* End of Gradulate Assets */
+	
 	.contact-con {
 		align-items: flex-end;
 		width: 50%;
@@ -473,7 +582,70 @@ body {
 /* Large devices (large desktops, 1200px and up) */
 
 @media (min-width: 1200px) {
+	.project-image {
+		flex-direction: row;
+	}
 
+	.project-image, .project-description {
+		padding: 10px 50px;
+	}
+
+	.project-con {
+		flex-direction: row;
+	}
+	
+	.project-description p, .project-description > div  {
+		margin: 20px 30px;
+		margin-bottom: 0;
+		text-align: left;
+	}
+	
+	.project-description p:nth-child(1) {
+		font-size: 40px;
+	}
+	
+	.project-description p:nth-child(2) {
+		margin: 20px 0;
+		margin-right: 100px;
+	}
+
+	.project-description > div {
+		display: inline-flex;
+		align-self: flex-start;
+		margin: 0;
+	}
+	
+	/* MyGWA Assets */
+	
+	.mygwa-icon {
+		width: 150px;
+		height: 150px;
+	}
+	
+	.mygwa-my {
+		font-size: 100px;
+	}
+	
+	.mygwa-gwa {
+		font-size: 100px;
+	}
+	
+	/* End of MyGWA Assets */
+	
+	/* Gradulate Assets */
+	
+	.gradulate-icon {
+		width: 100px;
+		height: 100px;
+		border-radius: 20px;
+		margin-right: 20px;
+	}
+	
+	.gradulate-text {
+		font-size: 70px;
+	}
+	
+	/* End of Gradulate Assets */
 }
 
 @media (min-height: 550px) {
@@ -491,5 +663,15 @@ body {
 @media (max-width: 420px) {
 	.contact-me, .about-me {
 		min-height: 100vh;
+	}
+}
+
+@media (max-width: 1200px) {
+	.project-image {
+		order: 1;
+	}
+
+	.project-description {
+		order: 2;
 	}
 }
