@@ -342,7 +342,6 @@ body {
 .project-description > button {
 	display: flex;
 	align-items: center;
-	display: none;
 }
 
 .project-description > button:before {
@@ -369,6 +368,10 @@ body {
 	font-size: 50px;
 }
 
+.mygwa-btn-text:after {
+	content: '/janjanmedinaaa/mygwa';
+}
+
 /* End of MyGWA Assets */
 
 /* Gradulate Assets */
@@ -384,6 +387,10 @@ body {
 	margin-top: 10px;
 	font-family: Roboto Thin;
 	color: rgb(126, 236, 197);
+}
+
+.gradulate-btn-text:after {
+	content: '/janjanmedinaaa/Gradulate';
 }
 
 /* End of Gradulate Assets */
@@ -543,6 +550,9 @@ body {
 		font-size: 70px;
 	}
 	
+	.mygwa-btn-text:after {
+		content: 'https://github.com/janjanmedinaaa/mygwa';
+	}
 	/* End of MyGWA Assets */
 	
 	/* Gradulate Assets */
@@ -557,7 +567,10 @@ body {
 	.gradulate-text {
 		font-size: 50px;
 	}
-	
+
+	.gradulate-btn-text:after {
+		content: 'https://github.com/janjanmedinaaa/Gradulate';
+	}
 	/* End of Gradulate Assets */
 	
 	.contact-con {
