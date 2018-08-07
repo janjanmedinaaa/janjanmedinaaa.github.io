@@ -18,6 +18,15 @@ body {
 	color: #fff;
 }
 
+/* Background Images */
+
+.home, .my-projects, .footer {
+	background-image:url(./assets/home-bg.png);
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:center; 
+}
+
 /***** mainContainer *****/
 
 #mainContainer {
@@ -129,10 +138,6 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	background-image:url(./assets/home-bg.png);
-	background-repeat:no-repeat;
-	background-attachment:fixed;
-	background-position:center; 
 }
 
 .home img {
@@ -286,10 +291,6 @@ body {
 
 .my-projects {
 	padding: 30px 0;
-	background-image:url(./assets/home-bg.png);
-	background-repeat:no-repeat;
-	background-attachment:fixed;
-	background-position:center; 
 }
 
 .project-con {
@@ -439,10 +440,6 @@ body {
 	padding: 12px 0;
 	background-color: #DB3243;
 	margin: 0;
-	background-image:url(./assets/home-bg.png);
-	background-repeat:no-repeat;
-	background-attachment:fixed;
-	background-position:center; 
 }
 
 .footer a {
@@ -666,6 +663,15 @@ body {
 @media (min-height: 550px) {
 	.sidenav a {
 		padding: 30px;
+	}
+}
+
+@media (min-height: 1082px), (min-width: 1500px) {
+	.home, .my-projects, .footer {
+		background-image:url(./assets/home-bg-v2.png);
+		background-repeat:no-repeat;
+		background-attachment:fixed;
+		background-position:center; 
 	}
 }
 
