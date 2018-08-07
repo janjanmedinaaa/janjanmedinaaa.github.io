@@ -44,8 +44,8 @@ body {
 	flex-direction: column;	
 	position: fixed;
 	width: 100%;
-	bottom: 0;
-	right: 0;
+	bottom: 20;
+	right: 20;
 }
 
 .message-icon {
@@ -181,6 +181,100 @@ body {
 	color: #000;
 }
 
+.skills-con {
+	display: flex;
+	flex-direction: column;
+	/* background-color: teal; */
+	width: 70%;
+	color: #DB3243;
+}
+
+.skills-con > div {
+	padding: 0;
+	margin: 0;
+}
+
+.skills-head {
+	display: flex;
+}
+
+.skills-head .nav-left {
+	justify-content: center;
+}
+
+.skills-head .nav-right {
+	display: none;
+}
+
+.skills-con h3{
+	padding: 0 10px;
+	text-decoration-line: none;
+	text-decoration-color: transparent;
+	align-self: center;
+}
+
+.skill-select {
+	background-color:#ED5565;
+	color: #fff;
+}
+
+.skill-set {
+	width: 85%;
+	padding: 0;
+	margin: 0;
+}
+
+.skill-bar {
+	display: flex;
+	padding: 0;
+	border: 1px solid #DB3243;
+	margin-bottom: 0;
+}
+
+.skills-web, .skills-mobile {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Skills */
+
+.html5 {
+    background: -webkit-linear-gradient(left, #ED5565 80%, #FEFDFD 20%);
+    background: -o-linear-gradient(left, #ED5565 80%, #FEFDFD 20%);
+    background: -moz-linear-gradient(left, #ED5565 80%, #FEFDFD 20%);
+	background: linear-gradient(left, #ED5565 80%, #FEFDFD 20%);
+}
+
+.css3 {
+    background: -webkit-linear-gradient(left, #ED5565 60%, #FEFDFD 40%);
+    background: -o-linear-gradient(left, #ED5565 60%, #FEFDFD 40%);
+    background: -moz-linear-gradient(left, #ED5565 60%, #FEFDFD 40%);
+	background: linear-gradient(left, #ED5565 60%, #FEFDFD 40%);
+}
+
+.javascript {
+    background: -webkit-linear-gradient(left, #ED5565 50%, #FEFDFD 50%);
+    background: -o-linear-gradient(left, #ED5565 50%, #FEFDFD 50%);
+    background: -moz-linear-gradient(left, #ED5565 50%, #FEFDFD 50%);
+	background: linear-gradient(left, #ED5565 50%, #FEFDFD 50%);
+}
+
+.android-java {
+    background: -webkit-linear-gradient(left, #ED5565 80%, #FEFDFD 20%);
+    background: -o-linear-gradient(left, #ED5565 80%, #FEFDFD 20%);
+    background: -moz-linear-gradient(left, #ED5565 80%, #FEFDFD 20%);
+	background: linear-gradient(left, #ED5565 80%, #FEFDFD 20%);
+}
+
+.react-native {
+    background: -webkit-linear-gradient(left, #ED5565 60%, #FEFDFD 40%);
+    background: -o-linear-gradient(left, #ED5565 60%, #FEFDFD 40%);
+    background: -moz-linear-gradient(left, #ED5565 60%, #FEFDFD 40%);
+	background: linear-gradient(left, #ED5565 60%, #FEFDFD 40%);
+}
+
 .fb {
     border-color:#3B5998;
     color: #3B5998;
@@ -306,6 +400,18 @@ body {
 
 	.about-me {
 		padding: 30px 50px;
+	}
+
+	.skills-head .nav-left {
+		justify-content: flex-start;
+	}
+	
+	.skills-head .nav-right {
+		display: inline-flex;
+	}
+
+	.skills-mobile {
+		display: none;
 	}
 }
 
