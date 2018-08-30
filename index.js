@@ -6,7 +6,6 @@ window.onload = function() {
     }
 
     webSkill();
-    console.log("hi");
 }
 
 window.onresize = function() {
